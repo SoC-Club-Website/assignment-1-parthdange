@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: monospace, 'major mono display';
+}   
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+.banner{
+    display:grid;
+    position: relative;
+    top:20vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 2.5vh;
+    margin:5vh;
+    font-size: larger;
+    grid-column-gap: 20px;
+    background-color: rgba(66, 66, 66, 0.651);
+}
+.dp{
+    height:30vh;
+    border-radius:100%;
+    text-align:center;
+    position:relative;
+    top:20vh;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+
+.dp:hover{
+    opacity:0.5;
+}
+
+h1{
+    position: relative;
+    top:20vh;
+    text-align:center;
+    font-size: 15vh;
+    
+}
+
+.bg{
+    height:100vh;
+    width:100%;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+}
+
+h2{
+    background-color: rgba(66, 66, 66, 0.651);
+    margin:20px;
+    padding:10px;
+    text-align:center;
+    position: relative;
+    top:20vh;
+}
+
+.bg2{
+    
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+}
+
+.about{
+    background-color: rgba(66, 66, 66, 0.651);
+    margin:20px;
+    padding:10px;
+    display: block;
+    max-height:80vh;
+    position: relative;
+    top:20vh;
+}
+
+#gallery{
+    position: absolute;
+    top:200vh;
+    
+}
