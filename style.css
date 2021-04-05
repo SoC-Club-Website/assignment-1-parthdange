@@ -2,6 +2,8 @@ body{
     background-color: black;
     color: white;
     font-family: monospace, 'major mono display';
+    transition: color 2s ease-in-out;
+    transition-delay: 1s;
 }   
 a{
     color: white;
@@ -84,5 +86,147 @@ h2{
 #gallery{
     position: absolute;
     top:200vh;
+    left:50%;
+    transform: translatex(-50%);
+    text-align: center;
+    width:90%;
+}
+
+#grid{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
     
+    grid-gap:10px;
+    display:grid;
+    width: 80vh;
+    height:80vh;
+    margin:0 10vh;
+    position:absolute;
+    top:220vh;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.one{
+    grid-column:1/4;
+    grid-row:1/2;
+    background:url(pic4.png);
+    background-size: cover;
+}
+
+.two{
+    grid-column:4/5;
+    grid-row:1/4;
+    background:url(pic3.jpg);
+    background-size: cover;
+}
+
+.three{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background:url(pic5.jpg);
+    background-size: cover;
+}
+
+.four{
+    grid-column: 2/5;
+    grid-row: 4/5;
+    background:url(pic1.jpg);
+    background-size: cover;
+}
+
+.five{
+    grid-column:1/2;
+    grid-row:2/5;
+    background:url(pic2.jpg);
+    background-size: cover;
+}
+
+#form{
+    position: absolute;
+    top:300vh;
+    left:50%;
+    transform: translateX(-50%);
+    width:90%;
+}
+
+.form{
+    position: absolute;
+    top:310vh;
+    left:50%;
+    transform: translateX(-50%);
+    width:50%;
+    text-align: center;
+    padding:5%;
+}
+
+label{
+    display:inline-block;
+    width:20%;
+    margin-top:10vh;
+}
+
+input,textarea{
+    width:30%;
+}
+
+button{
+    margin:10vh;
+    margin-bottom:0;
+    height:10vh;
+    width:20%;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bg3{
+    
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:300%;
+    left:0px;
+    z-index:-1;
+}
+
+#contact{
+    position: absolute;
+    top:400vh;
+    left:50%;
+    transform: translateX(-50%);
+    width:90%;
+}
+
+.contactme{
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+    position: absolute;
+    top:420vh;
+    left:50%;
+    transform: translateX(-50%);
+    height:30vh;
+    width:80%;
+    text-align:center;
+    column-gap: 5%;
+    background-color: rgba(167, 167, 167, 0.651);
+}
+
+
+#mail{
+    background:url(mail.png);
+    background-size: cover;
+}
+#linkedin{
+    background:url(linkedin.png);
+    background-size: cover;
+}
+
+#insta{
+    background: url(insta.png);
+    background-size: cover;
+}
+
+#whatsapp{
+    background: url(whatsapp.png);
+    background-size: cover;
 }
