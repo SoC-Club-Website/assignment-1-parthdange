@@ -4,33 +4,23 @@ body{
     font-family: monospace, 'major mono display';
     transition: color 2s ease-in-out;
     transition-delay: 1s;
+    
 }   
 a{
     color: white;
     text-decoration: none;
     
 }
-.banner{
-    display:grid;
-    position: relative;
-    top:20vh;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    text-align: center;
-    padding: 2.5vh;
-    margin:5vh;
-    font-size: larger;
-    grid-column-gap: 20px;
-    background-color: rgba(66, 66, 66, 0.651);
-}
+
 .dp{
     height:30vh;
     border-radius:100%;
     text-align:center;
-    position:relative;
+    position:absolute;
     top:20vh;
     left:50%;
     transform: translateX(-50%);
-    
+    transition: transform 1s ease-in;
 }
 
 .dp:hover{
@@ -38,11 +28,15 @@ a{
 }
 
 h1{
-    position: relative;
-    top:20vh;
+    position: absolute;
+    top:50vh;
     text-align:center;
     font-size: 15vh;
-    
+    left:50%;
+    transform: translatex(-50%);
+    text-align: center;
+    max-height: 20vh;
+    width:90%;
 }
 
 .bg{
@@ -54,6 +48,21 @@ h1{
     z-index: -1;
 }
 
+.banner{
+    display:grid;
+    position: absolute;
+    top:80vh;
+    left:50%;
+    transform: translatex(-50%);
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 2.5vh;
+    margin:5vh;
+    font-size: larger;
+    grid-column-gap: 20px;
+    background-color: rgba(66, 66, 66, 0.651);
+}
+
 h2{
     background-color: rgba(66, 66, 66, 0.651);
     margin:20px;
@@ -61,6 +70,14 @@ h2{
     text-align:center;
     position: relative;
     top:20vh;
+}
+#about{
+    position: absolute;
+    top:100vh;
+    left:50%;
+    transform: translatex(-50%);
+    text-align: center;
+    width: 90%;
 }
 
 .bg2{
@@ -79,8 +96,10 @@ h2{
     padding:10px;
     display: block;
     max-height:80vh;
-    position: relative;
-    top:20vh;
+    position: absolute;
+    top:120vh;
+    left:50%;
+    transform: translatex(-50%);
 }
 
 #gallery{
@@ -124,8 +143,11 @@ h2{
 .three{
     grid-column: 2/4;
     grid-row: 2/4;
-    background:url(pic5.jpg);
     background-size: cover;
+}
+
+video{
+    object-fit:cover;
 }
 
 .four{
