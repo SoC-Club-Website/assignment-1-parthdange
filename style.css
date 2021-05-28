@@ -252,3 +252,18 @@ button{
     background: url(whatsapp.png);
     background-size: cover;
 }
+
+.counter{
+    position: absolute;
+    top:480vh;
+    left:50%;
+    transform: translateX(-50%);
+    width:50%;
+    text-align:center;
+}
+
+#number{
+    background-color: white;
+    color: black;
+    font-size: 20vh;
+}
